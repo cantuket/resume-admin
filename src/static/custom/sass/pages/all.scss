@@ -1,0 +1,27 @@
+
+.route-wrapper {
+  position: relative;
+}
+
+.route-wrapper > div {
+  position: absolute;
+  // padding-top: 100px;
+  width:100%;
+}
+
+a {
+  color:#80deea;
+}
+
+h6{
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+.material-icons.large {
+  font-size: 40px;
+}
+
+.no-pointer {
+  cursor:initial !important;
+}

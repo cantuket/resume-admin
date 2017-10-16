@@ -1,0 +1,29 @@
+.main-nav {
+	position: fixed;
+	top:0;
+	width:100%;
+	height:inherit;
+	z-index:100;
+  background-color: rgb(121, 134, 203);
+
+  .col {
+    padding: 0;
+  }
+  a {
+    display: block;
+    text-align: center;
+    width:100%;
+  }
+  a * {
+    border-radius: 0px !important;
+  }
+
+}
+
+.mobile-nav {
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 100;
+}

@@ -1,0 +1,2 @@
+.accordion__body{display:block}.accordion__body,.accordion__body--hidden{-webkit-animation:fadein .35s ease-in;animation:fadein .35s ease-in}.accordion__body--hidden{display:none;opacity:0}@keyframes fadein{0%{opacity:0}to{opacity:1}}@-webkit-keyframes fadein{0%{opacity:0}to{opacity:1}}
+/*# sourceMappingURL=main.484aae50.css.map*/
