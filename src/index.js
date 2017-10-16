@@ -9,7 +9,6 @@ import injectTapEventPlugin from 'react-tap-event-plugin'
 import { PrivateRoute } from './components/auth/require_auth'
 import reducers from './reducers'
 import { composeWithDevTools } from 'redux-devtools-extension';
-
 // import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
@@ -22,14 +21,8 @@ import Signin from './components/auth/signin'
 import Signout from './components/auth/signout'
 import Signup from './components/auth/signup'
 
-import Welcome from './components/welcome'
-import Work from './components/Resume/Work'
-import Breadcrumbs from './components/Resume/Work/global/breadcrumbs'
-import Portfolio from './components/Resume/Work/Portfolio/index'
-import Infrastructure from './components/Resume/Work/Infrastructure'
 import Experience from './components/Resume/Experience'
 import EditExperience from './components/Resume/Experience/Edit'
-// import Contact from './components/Resume/Contact'
 
 injectTapEventPlugin()
 const store = createStore(reducers,composeWithDevTools(
@@ -67,25 +60,15 @@ ReactDOM.render(
           <div  style={{paddingLeft:'150px'}} className="body">
             <div className="row">
               <div className="col  m10 offset-m1">
-              <Route path="/work" component={Breadcrumbs}/>
                 <PrivateRoute path="/" exact={true} component={Experience}/>
                 <Route path="/signin" component={Signin}/>
                 <Route path="/signout" component={Signout}/>
                 <PrivateRoute path="/signup" component={Signup}/>
-  
-                {/* Public */}
-                <Route path="/welcome" component={Welcome}/>                
-
+          
                 {/* Private */}
-                <Route path="/experience" exact={true} component={Experience}/>
-                <Route path="/experience/:experienceId" exact={true} component={EditExperience}/>
+                <PrivateRoute path="/experience" exact={true} component={Experience}/>
+                <PrivateRoute path="/experience/:experienceId" exact={true} component={EditExperience}/>
                 
-                <Route path="/work" exact={true} component={Work}/>
-                
-                <Route path="/work/portfolio" exact={true} component={Portfolio}/>
-                <Route path="/work/infrastructure" exact={true} component={Infrastructure}/>
-                
-                {/* <Route path="/contact" exact={true} component={Contact}/> */}
 
               </div>
             </div>
