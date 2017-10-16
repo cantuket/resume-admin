@@ -9,7 +9,7 @@ import {
   FETCH_EXPERIENCES,
   FETCH_EXPERIENCE,
 } from './types'
-const ROOT_URL = 'http://35.202.81.248:3090'
+const ROOT_URL = 'http://104.197.146.179:3090'
 // const ROOT_URL = 'http://localhost:3090'
 
 
