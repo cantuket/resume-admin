@@ -60,14 +60,14 @@ ReactDOM.render(
           <div  style={{paddingLeft:'150px'}} className="body">
             <div className="row">
               <div className="col  m10 offset-m1">
-                <PrivateRoute path="/" exact={true} component={Experience}/>
-                <Route path="/signin" component={Signin}/>
-                <Route path="/signout" component={Signout}/>
-                <PrivateRoute path="/signup" component={Signup}/>
+                <PrivateRoute path="/admin" exact={true} component={Experience}/>
+                <Route path="/admin/signin" component={Signin}/>
+                <Route path="/admin/signout" component={Signout}/>
+                <PrivateRoute path="/admin/signup" component={Signup}/>
           
                 {/* Private */}
-                <PrivateRoute path="/experience" exact={true} component={Experience}/>
-                <PrivateRoute path="/experience/:experienceId" exact={true} component={EditExperience}/>
+                <PrivateRoute path="/admin/experience" exact={true} component={Experience}/>
+                <PrivateRoute path="/admin/experience/:experienceId" exact={true} component={EditExperience}/>
                 
 
               </div>
