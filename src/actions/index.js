@@ -9,7 +9,7 @@ import {
   FETCH_EXPERIENCES,
   FETCH_EXPERIENCE,
 } from './types'
-const ROOT_URL = 'http://resume-server.endbehavior.com:3090'
+const ROOT_URL = 'http://resume-demo-server.endbehavior.com:3090'
 // const ROOT_URL = 'http://localhost:3090'
 
 
